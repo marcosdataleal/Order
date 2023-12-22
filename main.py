@@ -1,13 +1,14 @@
 while True:
-  sequence = input('Informe os números da sequencia por virgula: ')
+  sequence = input('Enter the sequence of numbers separated by commas: ')
 
   try:
-      numeros = [float(num) for num in sequence.split(',')]
-      break  
+      numbers = [float(num) for num in sequence.split(',')]
+      break
   except ValueError:
-      print('Erro: Certifique-se de inserir apenas números separados por vírgula. Tente novamente.')
+      print('Error: Make sure to enter only numbers separated by commas. Please try again.')
 
-order = sorted(numeros)
+sorted_numbers = sorted(numbers)
 
-print('Os números escritos em ordem crescente ficam dessa forma:', order)
+print('The numbers in ascending order are:', sorted_numbers)
+
 
